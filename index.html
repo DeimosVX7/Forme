@@ -140,7 +140,7 @@ function calcular() {
         totalSemana += totalDia;
     });
 
-    document.getElementById("result").textContent = `Total: ${totalSemana} horas`;
+    document.getElementById("result").textContent = `Total: ${totalSemana.toFixed(1)} horas`;
 }
 document.addEventListener("input", e => {
     if (e.target.type === "time") {
